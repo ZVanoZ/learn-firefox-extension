@@ -1,0 +1,26 @@
+{
+  "description": "Демо для режима popup-action",
+  "manifest_version": 2,
+  "name": "manifest-browser_action-popup",
+  "version": "1.0",
+  "homepage_url": "https://github.com/ZVanoZ/learn-firefox-extension",
+  "permissions": [
+    "activeTab"
+  ],
+  "web_accessible_resources": [
+    "icons/*"
+  ],
+  "icons": {
+    "32": "icons/app/32x32.png"
+  },
+  "background": {
+    "scripts": [
+      "background/index.js"
+    ]
+  },
+  "browser_action": {
+    "default_icon": "icons/app/32x32.png",
+    "default_title": "auto-ria helper",
+    "default_popup": "default_popup/index.html"
+  }
+}

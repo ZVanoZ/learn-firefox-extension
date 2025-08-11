@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css"/>
+    <title>browser_action/popup-action/default_popup</title>
+  </head>
+<body>
+  <div id="popup-content">
+    <button data-action="inject-script-into-page">Инъекция скрипта</button>
+    <button data-action="get-data-from-page">Получить данные из страницы</button>
+    <button data-action="invalid-action-key">Получить данные из страницы</button>
+  </div>
+  <div id="error-content" class="hidden">
+    <p>Произошла какая-то ошибка</p>
+  </div>
+  <script>
+    console.log('default_popup/index.html');
+  </script>
+  <script src="index.js"></script>
+</body>
+
+</html>
